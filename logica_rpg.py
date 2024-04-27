@@ -8,6 +8,7 @@ def ola():
         {
             "first": "Add Item",
             "second": "Set the new item's stats",
+            "critStat":"Crit value",
             "third": "Item's description"
         }
     ]
@@ -29,43 +30,58 @@ def ola():
 
     second_input = [
         {
-            "type": "text",
+            "type": "number",
             "id": "atk",
             "name": "atk",
-            "placeholder": "ATK"   
+            "value": "0"   
         },
         {
-            "type": "text",
+            "type": "number",
             "id": "def",
             "name": "def",
-            "placeholder": "DEF"
+            "value": "0"
         },
         {
-            "type": "text",
+            "type": "number",
             "id": "hp",
             "name": "hp",
-            "placeholder": "HP"
+            "value": "0"
         },
         {
-            "type": "text",
+            "type": "number",
             "id": "str",
             "name": "str",
-            "placeholder": "STR"
+            "value": "0"
         },
         {
-            "type": "text",
+            "type": "number",
             "id": "int",
             "name": "int",
-            "placeholder": "INT"
+            "value": "0"
         },
         {
-            "type": "text",
+            "type": "number",
             "id": "agi",
             "name": "agi",
-            "placeholder": "AGI"
+            "value": "0"
+        }
+    ],
+
+    crit_input = [
+        {
+            "type": "number",
+            "id": "rate",
+            "name": "rate",
+            "value": "0" 
+        },
+        {
+            "type": "number",
+            "id": "dmg",
+            "name": "dmg",
+            "value": "0"
         }
     ]
 
-    return render_template('index.html', legends=legends, inputs=input_name_type, secondInput=second_input)
+    return render_template('index.html', legends=legends, inputs=input_name_type, secondInput=second_input, critInput=crit_input)
 
 app.run()
