@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG API</title>
+</head>
+<body>
+    <form action="#" method="post" class="form">
+        <fieldset class="first__container">
+            <div class="first__container__add__item">
+                <legend class="first__container__add__item__legend">{{ legends[0]['first'] }}</legend>
+            </div>
+            <div class="first__container__add__item__input">
+                {% for input in inputs %}
+                <label for="{{ input.id }}">{{ input.placeholder }}</label>
+                <input type="{{ input.type }}" id="{{ input.id }}" name="{{ input.name }}" placeholder="{{ input.placeholder }}" required />
+                {% endfor %}
+            </div>
+        </fieldset>
+        <fieldset class="second__container">
+            <div class="second__container__set__stats">
+                <legend class="second__container__set__stats__legend">{{ legends[0]['second'] }}</legend>
+            </div>
+            <div class="second__container__set__stats__input">
+                {% for input in secondInput %}
+                <label for="{{ input.id }}">{{ input.placeholder }}</label>
+                <input type="{{ input.type }}" id="{{ input.id }}" name="{{ input.name }}" placeholder="{{ input.placeholder }}" required />
+                {% endfor %}
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
