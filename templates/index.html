@@ -2,6 +2,25 @@
 {% extends "template.html" %}
 {% block content %}
 
+
+
+
+
+
+
+
+
+
+<!--
+    FAVOR CONSERTAR O NOME DAS DIVS QUE EU DEI SÓ CTRL + C/V E FICOU TUDO COM AS MESMAS CLASSES VLW TMJ
+-->
+
+
+
+
+
+
+
 <form action="#" method="post" class="form">
     <fieldset class="first__container">
         <div class="first__container__add__item">
@@ -30,6 +49,27 @@
             <label for="{{ input.id }}">{{ input.name.upper() }}</label>
             <input type="{{ input.type }}" id="{{ input.id }}" name="{{ input.name }}" value="{{ input.value }}" required />
             {% endfor %}
+        </div>
+        <div class="second__container__set__crit__value__input">
+            <legend class="second__container__set__crit__value__legend">{{ legends[0]['spdValue'] }}</legend>
+            {% for value in spdInput %}
+            <label for="{{ value.id }}">{{ value.name.upper() }}</label>
+            <input type="{{ value.type }}" id="{{ value.id }}" name="{{ value.name }}" value="{{ value.value }}" required />
+            {% endfor %}
+        </div>
+        <div class="second__container__set__crit__value__input">
+            {% for cp in cpi %}
+            <label for="{{ cp.id }}">{{ cp.name.upper() }}</label>
+            <input type="{{ cp.type }}" id="{{ cp.id }}" name="{{ cp.name }}" value="{{ cp.value }}" required />
+            {% endfor %}
+        </div>
+        <div class="second__container__set__crit__value__input">
+            <label for="description">{{ legends[0]['third'] }}</label>
+            <textarea id="description" name="description" rows="5" cols="33">
+            </textarea>
+        </div>
+        <div>
+            <input type="submit" value="Save Item" />
         </div>
     </fieldset>
 </form>

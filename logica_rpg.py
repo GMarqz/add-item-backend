@@ -9,6 +9,7 @@ def ola():
             "first": "Add Item",
             "second": "Set the new item's stats",
             "critStat":"Crit value",
+            "spdValue": "Speed Value",
             "third": "Item's description"
         }
     ]
@@ -65,7 +66,7 @@ def ola():
             "name": "agi",
             "value": "0"
         }
-    ],
+    ]
 
     crit_input = [
         {
@@ -82,6 +83,36 @@ def ola():
         }
     ]
 
-    return render_template('index.html', legends=legends, inputs=input_name_type, secondInput=second_input, critInput=crit_input)
+    speed_input = [
+        {
+            "type": "number",
+            "id": "atks",
+            "name": "atk",
+            "value": "0"
+        },
+        {
+            "type": "number",
+            "id": "mvt",
+            "name": "mvt",
+            "value": "0"
+        }
+    ]
+
+    creator_price = [
+        {
+            "type": "text",
+            "id": "creator",
+            "name": "creator",
+            "placeholder": "Creator"
+        },
+        {
+            "type": "text",
+            "id": "price",
+            "name": "price",
+            "placeholder": "Price"
+        }
+    ]
+
+    return render_template('index.html', legends=legends, inputs=input_name_type, secondInput=second_input, critInput=crit_input, spdInput=speed_input, cpi=creator_price)
 
 app.run()
