@@ -1,0 +1,21 @@
+{
+    "name": "Draco Shoes",
+    "id": "551231481235",
+    "type": "Shoes",
+    "hp": 6,
+    "mp": 0,
+    "atk": 0,
+    "def": 6,
+    "str": 6,
+    "int": 6,
+    "agi": 6,
+    "speed": {
+        "mvt": 5,
+        "atk": 0
+    },
+    "evasion": 18,
+    "critical": {
+        "rate": 13,
+        "damage": 0
+    }
+}

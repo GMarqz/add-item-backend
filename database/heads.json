@@ -1,0 +1,21 @@
+{
+    "name": "Draco Helmet",
+    "id": "11541823",
+    "type": "Head",
+    "hp": 16,
+    "mp": 12,
+    "atk": 0,
+    "def": 15,
+    "str": 0,
+    "int": 6,
+    "agi": 0,
+    "speed": {
+        "mvt": 0,
+        "atk": 0
+    },
+    "evasion": 0,
+    "critical": {
+        "rate": 13,
+        "damage": 0
+    }
+}

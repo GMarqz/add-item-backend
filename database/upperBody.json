@@ -1,0 +1,21 @@
+{
+    "name": "Draco Breast",
+    "id": "22648758",
+    "type": "Upper Body",
+    "hp": 30,
+    "mp": 15,
+    "atk": 0,
+    "def": 21,
+    "str": 0,
+    "int": 6,
+    "agi": 0,
+    "speed": {
+        "mvt": 0,
+        "atk": 0
+    },
+    "evasion": 0,
+    "critical": {
+        "rate": 13,
+        "damage": 0
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Draco Luvas",
+    "id": "448712315621",
+    "type": "Gloves",
+    "hp": 4,
+    "mp": 0,
+    "atk": 0,
+    "def": 6,
+    "str": 0,
+    "int": 6,
+    "agi": 6,
+    "speed": {
+        "mvt": 0,
+        "atk": 6
+    },
+    "evasion": 0,
+    "critical": {
+        "rate": 13,
+        "damage": 0
+    }
+}

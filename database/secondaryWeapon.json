@@ -1,0 +1,22 @@
+{
+    "name": "Draco Shield",
+    "id": "66666666666",
+    "type": "Shield",
+    "hp": 0,
+    "mp": 6,
+    "atk": 0,
+    "def": 60,
+    "str": 0,
+    "int": 6,
+    "agi": 0,
+    "speed": {
+        "mvt": 0,
+        "atk": 0
+    },
+    "evasion": 0,
+    "critical": {
+        "rate": 13,
+        "damage": 0
+    }
+}
+

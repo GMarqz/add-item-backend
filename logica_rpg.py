@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, request
 
 app = Flask(__name__)
 
@@ -114,5 +114,16 @@ def ola():
     ]
 
     return render_template('index.html', legends=legends, inputs=input_name_type, secondInput=second_input, critInput=crit_input, spdInput=speed_input, cpi=creator_price)
+
+@app.route('/login',)
+def login():
+    return render_template('login.html')
+
+@app.route('/autenticar', methods=['POST',])
+def autenticar():
+    if 'admin' == request.form['senha']:
+        return redirect('/')
+    else:
+        return redirect('/login')
 
 app.run()

@@ -1,0 +1,21 @@
+{
+    "name": "Draco Sword",
+    "id": "648454132",
+    "type": "Sword",
+    "hp": 0,
+    "mp": 0,
+    "atk": 21,
+    "def": 0,
+    "str": 8,
+    "int": 6,
+    "agi": 0,
+    "speed": {
+        "mvt": 0,
+        "atk": 0
+    },
+    "evasion": 0,
+    "critical": {
+        "rate": 13,
+        "damage": 20
+    }
+}
